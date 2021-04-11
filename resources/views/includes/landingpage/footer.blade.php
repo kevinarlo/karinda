@@ -6,22 +6,7 @@
         <div class="row justify-content-between">
                 
                 <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <div class="footer-widget-area mb-80">
-                        <!-- Widget Title -->
-                        <div class="widget-title">
-                            <h6>About Us</h6>
-                        </div>
-
-                        <div class="footer-logo my-4">
-                            <img src="{{ url('frontend/img/core-img/logo_kbn.png') }}" alt="">
-                        </div>
-                        <p>Integer nec bibendum lacus. Suspen disse dictum enim sit amet libero males uada feugiat. Praesent malesuada.</p>
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                <div class="col-12 col-sm-6 col-md-4 col-xl-6">
                     <div class="footer-widget-area mb-80">
                         <!-- Widget Title -->
                         <div class="widget-title">
@@ -29,15 +14,15 @@
                         </div>
                         <!-- Address -->
                         <div class="address">
-                            <h6><img src="{{ url('frontend/img/icons/phone-call.png') }}" alt=""> +6287878677472</h6>
-                            <h6><img src="{{ url('frontend/img/icons/envelope.png') }}" alt=""> karindabngunnusa0@gmail.com</h6>
-                            <h6><img src="{{ url('frontend/img/icons/location.png') }}" alt=""> Jl. Syech Quro, Perkantoran Johar Indah Ruko No. A10, Karawang Timur, 41314</h6>
+                            <h6><a href="tel:+6282111833320"><img src="{{ url('frontend/img/icons/phone-call.png') }}" alt="">+6282111833320</a></h6>
+                            <h6><a href="mailto:karindabangunnusa0@gmail.com"><img src="{{ url('frontend/img/icons/envelope.png') }}" alt="">karindabangunnusa0@gmail.com</a></h6>
+                            <h6><img src="{{ url('frontend/img/icons/location.png') }}" alt=""> Jl. Sukasari, Sukasari, Kec. Purwasari, Kabupaten Karawang, Jawa Barat 41373</h6>
                         </div>
                     </div>
                 </div>
 
                 <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                <div class="col-12 col-sm-6 col-md-4 col-xl-6">
                     <div class="footer-widget-area mb-80">
                         <!-- Widget Title -->
                         <div class="widget-title">
@@ -61,7 +46,7 @@
     <!-- Copywrite Text -->
     <div class="copywrite-text d-flex align-items-center justify-content-center">
         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | PT. Karinda Bangun Nusa
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Bumi Sukasari Indah
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
     </div>
 </footer>

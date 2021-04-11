@@ -23,6 +23,8 @@
 
     @include('includes.wa')
 
+    @include('includes.landingpage.footer')
+
     @include('includes.script')
     
 </body>
