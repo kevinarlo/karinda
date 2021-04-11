@@ -36,9 +36,9 @@
 
 <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item">
-    <a class="nav-link" href="#">
+    <a class="nav-link" href="{{ route('document') }}">
         <i class="fas fa-fw fa-newspaper"></i>
-        <span>Berita</span>
+        <span>Document</span>
     </a>
 </li>
 

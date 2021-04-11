@@ -327,7 +327,6 @@
 <!-- collapse area end -->
 
 <!-- Promo area start -->
-
 <section class="south-contact-area section-padding-100-50">
     <div class="container">
         <div class="row">
@@ -337,10 +336,9 @@
                     <h4><s><font face="arial" color="#947054">Rp 150.500.000</s></font></h4>
                     <h4><font face="arial" color="#947054">Booking Sekarang</font></h4>
                     <h4><font face="arial" color="#947054">Rp 140.000.000</font></h4>
-                    <h4><font face="arial" color="#947054">Hanya di Bulan Juli!</font></h4>
                     <br><br>
-                    <h4><font face="arial" color="#947054">Promo Special Khusus Juli 2020</font></h4>
-                    <h4><font face="arial" color="#947054">Diskon >10Jt untuk 100 orang tercepat!</font></h4>
+                    <h4><font face="arial" color="#947054">Promo Special 2021</font></h4>
+                    <h4><font face="arial" color="#947054">Dp Rp 500.000 sudah bisa dapat rumah</font></h4>
                     <br>
                     <h4><font face="arial" color="#947054">Cukup dengan 1JUTA Siap Huni!</font></h4>
                     <h4><font face="arial" color="#947054">Proses Cepat dan Bebas Pilih Unit!!!</font></h4>
@@ -349,5 +347,5 @@
         </div>
     </div>
 </section>
-
 <!-- Promo area end -->
+@endsection

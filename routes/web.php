@@ -35,8 +35,21 @@ Route::prefix('admin')
         ->middleware('auth')
         ->namespace('admin')
         ->group(function(){
-        Route::get('/', 'DashboardController@index')
-                ->name('dashboard');
+                Route::get('/', 'DashboardController@index')
+                        ->name('dashboard');
+                Route::get('/document', 'DocumentController@index')
+                        ->name('document');
+                Route::get('/documentexport', 'DocumentController@documentexport')
+                        ->name('documentexport');
+                Route::post('/documentimport', 'DocumentController@documentimportexcel')
+                        ->name('documentimport');
+
+                // Route::post('/documentimport', 'DocumentController@documentimportexcel')
+                //         ->name('documentimport');
+                
+                // Route::resource('document', DocumentController::class);
+                // Route::resource('document-export', DocumentController::class);
+
 
         });
         

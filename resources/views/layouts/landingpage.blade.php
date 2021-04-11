@@ -19,11 +19,9 @@
 
     @include('includes.preloader')
 
-    
-
     @yield('content')
 
-    
+    @include('includes.wa')
 
     @include('includes.script')
     

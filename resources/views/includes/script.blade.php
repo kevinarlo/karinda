@@ -13,3 +13,7 @@
 <!-- Google Maps -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
 <script src="{{ url('frontend/js/map-active.js') }}"></script>
+
+<script type="text/javascript" src="{{ url('frontend/engine1/wowslider.js') }}"></script>
+<script type="text/javascript" src="{{ url('frontend/engine1/script.js') }}"></script>
+<script src="{{ ('frontend/cdn.lightwidget.com/widgets/lightwidget.js') }}"></script>

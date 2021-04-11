@@ -23,11 +23,11 @@
 
     @yield('content')
 
+    @include('includes.wa')
+
     @include('includes.footer')
 
     @include('includes.script')
-
-    @stack('after-script')
     
 </body>
 
