@@ -38,20 +38,21 @@
             <!-- Contact Form Area -->
             <div class="col-12 col-lg-8">
                 <div class="contact-form">
-                    <form id="form1" name="form1" method="post" action="simpanpesan.php">
+                    <form action="{{ route('contact-create') }}" method="post">
+                        @csrf
                         <div class="form-group">
-                            <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama">
+                            <input type="name" class="form-control" name="name" id="name" placeholder="Nama">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="nomor telepon" id="nomor_telepon" placeholder="No. Handphone / Whatsapp">
+                            <input type="number" class="form-control" name="telp" id="telp" placeholder="No. Handphone / Whatsapp">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                            <input type="email" class="form-control" name="email" id="email" required="" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="pesan" id="pesan" cols="30" rows="10" placeholder="Pesan"></textarea>
+                            <textarea class="form-control" name="pesan" id="message" cols="30" rows="10" required="" placeholder="Pesan"></textarea>
                         </div>
-                        <button type="submit" class="btn south-btn" value="SEND">Send Message</button>
+                        <button type="submit" class="btn south-btn" value="Send Message">Send Message</button>
                         <br><br><br>
                     </form>
                 </div>

@@ -2,14 +2,11 @@
 
 namespace App\Http\Controllers\admin;
 
-use App\Document;
-use App\Exports\DocumentExport;
-use App\Imports\DocumentImport;
+use App\Message;
 use App\Http\Controllers\Controller;
-use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Http\Request;
 
-class DocumentController extends Controller
+class PesanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,26 +15,12 @@ class DocumentController extends Controller
      */
     public function index()
     {
-        $items = Document::all();
-        return view('pages.admin.document.index', [
+        $items = Message::latest()->get();
+        return view('pages.admin.pesan.index', [
             'items' => $items
         ]);
     }
 
-    public function documentexport()
-    {
-        return Excel::download(new DocumentExport,'document.xlsx');
-    }
-
-    public function documentimportexcel(Request $request)
-    {
-        $file = $request->file('file');
-        $namaFile = $file->getClientOriginalName();
-        $file->move('DataDocument', $namaFile);
-
-        Excel::import(new DocumentImport, public_path('/DataDocument/'.$namaFile));
-        return redirect('/document');
-    }
     /**
      * Show the form for creating a new resource.
      *
@@ -101,12 +84,12 @@ class DocumentController extends Controller
      */
     public function destroy($id)
     {
-        // $item = Document::findOrFail($id);
+        // $item = Message::findOrFail($id);
 
         // $item->delete();
 
         // // Alert::success('Selamat', 'Data Berhasil Dihapus');
 
-        // return redirect()->route('document.index');
+        // return redirect()->route('pesan.index');
     }
 }

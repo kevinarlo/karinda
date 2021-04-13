@@ -25,6 +25,8 @@ Route::get('/detail', 'DetailController@index')
 
 Route::get('/contact', 'ContactController@index')
         ->name('contact');
+Route::post('/contact', 'ContactController@create')
+        ->name('contact-create');
 
 // Landing Page
 Route::get('/landingpage', 'LandingController@index')
@@ -43,6 +45,8 @@ Route::prefix('admin')
                         ->name('documentexport');
                 Route::post('/documentimport', 'DocumentController@documentimportexcel')
                         ->name('documentimport');
+                Route::get('/pesan', 'PesanController@index')
+                        ->name('pesan');
 
                 // Route::post('/documentimport', 'DocumentController@documentimportexcel')
                 //         ->name('documentimport');
